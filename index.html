@@ -1,0 +1,409 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-center header-auto-show">
+        <a href="index.html" class="header-title">Welcome</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+
+
+    <div class="page-title page-title-fixed">
+        <h1>Quickzone</h1>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="page-title-clear"></div>
+        
+    <div class="page-content">
+            
+        <div class="content mt-n3 mb-4">
+            <div class="search-box search-dark shadow-sm border-0 mt-4 bg-theme rounded-sm bottom-0">
+                <i class="fa fa-search ms-1"></i>
+                <input type="text" class="border-0" placeholder="¿Buscas algo en especial?">
+            </div>               
+        </div>
+
+        <div class="content mt-0 mb-0">
+            <div class="d-flex">
+                <div class="align-self-center">
+                    <h1 class="mb-0 font-18">Servicios</h1>
+                </div>
+                <div class="ms-auto align-self-center">
+                    <a href="#" class="float-end font-12 font-400">See All</a>
+                </div>
+            </div>
+        </div>
+        <!-- SERVICIOS -->
+        <div class="splide double-slider visible-slider slider-no-arrows slider-no-dots" id="double-slider-1">
+            <div class="splide__track">
+                <div class="splide__list">
+                    <div class="splide__slide">
+                        <div class="card m-2 card-style" data-card-heigth="250">
+                            <a href="_bienesraices.html"><img src="images/quickzone/br1.png" style="max-width: 100%; height: auto;" style="max-width: 100%; height: auto;"></a>
+                            <div class="p-2 bg-theme rounded-sm">
+                                <div class="d-flex">
+                                    <div>
+                                        <a href="_bienesraices.html"><h4 class="mb-n1 font-14 line-height-xs pb-2">Bienes y Raices</h4></a>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <h4 class="font-16"></h4>
+                                    </div>
+                                </div>
+                                <p class="font-10 mb-0"><i class="fa fa-star color-yellow-dark pe-2"></i>34 Recommend It</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="card m-2 card-style" data-card-heigth="250">
+                            <a href="_carpinterias.html"><img src="images/quickzone/carpinteria.png" style="max-width: 100%; height: auto;" ></a>
+                            <div class="p-2 bg-theme rounded-sm">
+                                <div class="d-flex">
+                                    <div>
+                                        <a href="_carpinterias.html"><h4 class="mb-n1 font-14 line-height-xs pb-2">Servicios de carpinteria</h4></a>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <h4 class="font-16"></h4>
+                                    </div>
+                                </div>
+                                <p class="font-10 mb-0"><i class="fa fa-star color-yellow-dark pe-2"></i>34 Recommend It</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="card m-2 card-style" data-card-heigth="250">
+                            <a href="_lavanderias.html"><img src="images/quickzone/lavanderias.png" style="max-width: 100%; height: auto;" ></a>
+                            <div class="p-2 bg-theme rounded-sm">
+                                <div class="d-flex">
+                                    <div>
+                                        <a href="_lavanderias.html"><h4 class="mb-n1 font-14 line-height-xs pb-2">Servicios de lavanderia</h4></a>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <h4 class="font-16"></h4>
+                                    </div>
+                                </div>
+                                <p class="font-10 mb-0"><i class="fa fa-star color-yellow-dark pe-2"></i>34 Recommend It</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="card m-2 card-style" data-card-heigth="250">
+                            <a href="_taxis.html"><img src="images/quickzone/taxi.png" style="max-width: 100%; height: auto;"></a>
+                            <div class="p-2 bg-theme rounded-sm">
+                                <div class="d-flex">
+                                    <div>
+                                        <a href="_taxis.html"><h4 class="mb-n1 font-14 line-height-xs pb-2">Servicios de Taxi</h4></a>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <h4 class="font-16"></h4>
+                                    </div>
+                                </div>
+                                <p class="font-10 mb-0"><i class="fa fa-star color-yellow-dark pe-2"></i>34 Recommend It</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divider mt-3"></div>
+        <!-- Carrusel de imagenes -->   
+        <div class="splide single-slider slider-no-arrows visible-slider slider-no-dots" id="single-slider-1">            
+            <div class="splide__track">
+                <div class="splide__list">
+                    <div class="splide__slide">                    
+                        <div class="card card-style ms-3" style="background-image:url(images/quickzone/farmacais.png);" data-card-height="300">
+                            <div class="card-top px-3 py-3">
+                                <a href="#" data-menu="menu-heart" class="bg-white rounded-sm icon icon-xs float-end"><i class="fa fa-heart color-red-dark"></i></a>                                
+                            </div>
+                            <div class="card-bottom px-3 py-3">
+                                <a href="_farmacias.html"><h1 class="color-white">Farmacias</h1></a>
+                            </div>
+                            <div class="card-overlay bg-gradient opacity-30"></div>
+                            <div class="card-overlay bg-gradient"></div>
+                        </div>                
+                    </div>                    
+                    <div class="splide__slide">
+                        <div class="card card-style ms-3" style="background-image:url(images/quickzone/construccion.jpg);" data-card-height="300">
+                            <div class="card-top px-3 py-3">
+                                <a href="#" data-menu="menu-heart" class="bg-white rounded-sm icon icon-xs float-end"><i class="fa fa-heart color-red-dark"></i></a>                            
+                            </div>
+                            <div class="card-bottom px-3 py-3">
+                                <a href="_constructoras.html"><h1 class="color-white">Agencias Constructoras</h1></a>
+                            </div>
+                            <div class="card-overlay bg-gradient opacity-30"></div>
+                            <div class="card-overlay bg-gradient"></div>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="card card-style ms-3" style="background-image:url(images/quickzone/market.png);" data-card-height="300">
+                            <div class="card-top px-3 py-3">
+                                <a href="#" data-menu="menu-heart" class="bg-white rounded-sm icon icon-xs float-end"><i class="fa fa-heart color-red-dark"></i></a>                            
+                            </div>
+                            <div class="card-bottom px-3 py-3">
+                                <a href="_supermercados.html"><h1 class="color-white">Supermercados</h1></a>
+                            </div>
+                            <div class="card-overlay bg-gradient opacity-30"></div>
+                            <div class="card-overlay bg-gradient"></div>
+                        </div>
+                    </div>
+                   
+                    <div class="splide__slide">
+                        <div class="card card-style ms-3" style="background-image:url(images/quickzone/vacaciones.png);" data-card-height="300">
+                            <div class="card-top px-3 py-3">
+                                <a href="#" data-menu="menu-heart" class="bg-white rounded-sm icon icon-xs float-end"><i class="fa fa-heart color-red-dark"></i></a>                                
+                            </div>
+                            <div class="card-bottom px-3 py-3">
+                                <a href="_agencias.html"><h1 class="color-white">Agencias de viajes</h1></a>
+                            </div>
+                            <div class="card-overlay bg-gradient opacity-30"></div>
+                            <div class="card-overlay bg-gradient"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Seccion de Servicios -->
+        <div class="content mt-0 mb-0">
+            <div class="d-flex">
+                <div class="align-self-center">
+                    <h1 class="mb-0 font-18">Restaurantes</h1>
+                </div>
+                <div class="ms-auto align-self-center">
+                    <a href="#" class="float-end font-12 font-400">See All</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="splide double-slider visible-slider slider-no-arrows slider-no-dots" id="double-slider-2">
+            <div class="splide__track">
+                <div class="splide__list">
+                    <div class="splide__slide">
+                        <div class="card m-2 card-style">
+                            <a href="_parrilla.html"><img src="images/quickzone/restaurante1.png" class="img-fluid"></a>
+                            <div class="p-2 bg-theme rounded-sm">
+                                <div class="d-flex">
+                                    <div>
+                                        <a href="_parrilla.html"><h4 class="mb-n1 font-14 line-height-xs pb-2">Parrilladas Argentinas</h4></a>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <h4 class="font-16"></h4>
+                                    </div>
+                                </div>
+                                <p class="font-10 mb-0"><i class="fa fa-star color-yellow-dark pe-2"></i>34 Recommend It</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="card m-2 card-style">
+                            <a href="_templo.html"><img src="images/quickzone/restaurante2.png" class="img-fluid"></a>
+                            <div class="p-2 bg-theme rounded-sm">
+                                <div class="d-flex">
+                                    <div>
+                                        <a href="_templo.html"><h4 class="mb-n1 font-14 line-height-xs pb-2">El Templo </h4></a>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <h4 class="font-16"></h4>
+                                    </div>
+                                </div>
+                                <p class="font-10 mb-0"><i class="fa fa-star color-yellow-dark pe-2"></i>34 Recommend It</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="card m-2 card-style">
+                            <a href="_pizzeria.html"><img src="images/quickzone/restaurante3.png" class="img-fluid"></a>
+                            <div class="p-2 bg-theme rounded-sm">
+                                <div class="d-flex">
+                                    <div>
+                                        <a href="_pizzeria.html"><h4 class="mb-n1 font-14 line-height-xs pb-2">Larana Pizzeria</h4></a>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <h4 class="font-16"></h4>
+                                    </div>
+                                </div>
+                                <p class="font-10 mb-0"><i class="fa fa-star color-yellow-dark pe-2"></i>34 Recommend It</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ENCUENTRA LO QUE BUSCAS -->
+        <div class="divider mb-0"></div>
+        <div class="content mb-0">
+            <div class="d-flex">
+                <div class="align-self-center">
+                    <h1 class="mb-0 font-18">Encuentra lo que buscas</h1>
+                </div>
+                <div class="ms-auto align-self-center">
+                    <a href="#" class="float-end font-12 font-400">See All</a>
+                </div>
+            </div>
+            <!---->
+            <div class="row mb-0">
+                <div class="col-6 pe-1">
+                    <div class="card card-style mx-0" style="background-image:url(images/quickzone/cafeterias.png);" data-card-height="350">
+                        <div class="card-bottom p-3">
+                            <a href="_cafeterias.html"><h2 class="color-white">Caféterias</h2></a>
+                            <a href="_cafeterias.html"></a><p class="color-white opacity-60 line-height-s">
+                                Encuentra el lugar perfecto para tomar una taza de café
+                            </p></a>
+                        </div>
+                        <div class="card-overlay bg-gradient opacity-30"></div>
+                        <div class="card-overlay bg-gradient"></div>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-6">
+                    <div class="card card-style mx-0 mb-2" style="background-image:url(images/quickzone/hoteleria.png);" data-card-height="170">
+                        <div class="card-bottom p-3">
+                            <a href="_hoteles.html"><h2 class="color-white">Hoteleria</h2></a>
+                            <a href="_hoteles.html"><p class="color-white opacity-60 line-height-s font-12">
+                                Mas de 50 opciones para elegir
+                            </p></a>
+                        </div>
+                        <div class="card-overlay bg-gradient opacity-30"></div>
+                        <div class="card-overlay bg-gradient"></div>
+                    </div>
+                    <!---->
+                    <div class="card card-style mx-0 mb-0" style="background-image:url(images/quickzone/cine.png);" data-card-height="170">
+                        <div class="card-bottom p-3">
+                            <a href="_cines.html"><h2 class="color-white">Cines</h2></a>
+                            <a href="_cines.html"><p class="color-white opacity-60 line-height-s font-12">
+                                Encuentra los cines mas populares
+                            </p></a>
+                        </div>
+                        <div class="card-overlay bg-gradient opacity-30"></div>
+                        <div class="card-overlay bg-gradient"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+
+        
+        <div class="content mb-0">
+            <div class="d-flex">
+                <div class="align-self-center">
+                    <h1 class="mb-0 font-18">Más populares</h1>
+                </div>
+                <div class="ms-auto align-self-center">
+                    <a href="#" class="float-end font-12 font-400">See All</a>
+                </div>
+            </div>
+        </div>	
+
+        <div class="splide double-slider visible-slider slider-no-arrows slider-no-dots" id="double-slider-3">
+            <div class="splide__track">
+                <div class="splide__list">
+                    <div class="splide__slide">
+                        <div data-card-height="185" class="card rounded-m m-2 shadow-l" style="background-image:url(images/quickzone/cinepolis.png)">
+                            <div class="card-top mt-2">
+                                <p class="color-white"><i class="fa fa-star color-yellow-dark px-2"></i>4.9</p>
+                            </div>
+                            <div class="card-bottom mb-2">
+                                <h5 class="color-white font-15 px-2">Cinepolis</h5>
+                                <p class="color-white mb-0 mt-n2 font-11 opacity-30 px-2">Loved by John Doe</p>
+                            </div>
+                            <div class="card-overlay bg-gradient opacity-30"></div>
+                            <div class="card-overlay bg-gradient"></div>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div data-card-height="185" class="card rounded-m m-2 shadow-l" style="background-image:url(images/quickzone/farmacias_verde.png)">
+                            <div class="card-top mt-2">
+                                <p class="color-white"><i class="fa fa-star color-yellow-dark px-2"></i>4.7</p>
+                            </div>
+                            <div class="card-bottom mb-2">
+                                <h5 class="color-white font-15 px-2">Farmacias Verde</h5>
+                                <p class="color-white mb-0 mt-n2 font-11 opacity-30 px-2">Loved by John Doe</p>
+                            </div>
+                            <div class="card-overlay bg-gradien opacity-30t"></div>
+                            <div class="card-overlay bg-gradient"></div>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div data-card-height="185" class="card rounded-m m-2 shadow-l" style="background-image:url(images/quickzone/doctor.png)">
+                            <div class="card-top mt-2">
+                                <p class="color-white"><i class="fa fa-star color-yellow-dark px-2"></i>5.0</p>
+                            </div>
+                            <div class="card-bottom mb-2">
+                                <h5 class="color-white font-15 px-2">Consultoria Dr.Sanchez</h5>
+                                <p class="color-white mb-0 mt-n2 font-11 opacity-30 px-2">Loved by John Doe</p>
+                            </div>
+                            <div class="card-overlay bg-gradient opacity-30"></div>
+                            <div class="card-overlay bg-gradient"></div>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div data-card-height="185" class="card rounded-m m-2 shadow-l" style="background-image:url(images/quickzone/cons.png)">
+                            <div class="card-top mt-2">
+                                <p class="color-white"><i class="fa fa-star color-yellow-dark px-2"></i>5.0</p>
+                            </div>
+                            <div class="card-bottom mb-2">
+                                <h5 class="color-white font-15 px-2">Construccion Borcell</h5>
+                                <p class="color-white mb-0 mt-n2 font-11 opacity-30 px-2">Loved by John Doe</p>
+                            </div>
+                            <div class="card-overlay bg-gradient opacity-30"></div>
+                            <div class="card-overlay bg-gradient"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page content ends here-->
+    
+    <!-- Added to Bookmarks Menu-->
+    <div id="menu-heart" 
+         class="menu menu-box-modal rounded-m" 
+         data-menu-hide="1000"
+         data-menu-width="250"
+         data-menu-height="170">
+        
+        <h1 class="text-center mt-3 pt-2">
+            <i class="fa fa-heart color-red-dark fa-3x scale-icon"></i>
+        </h1>
+        <h3 class="text-center pt-2">Saved to Favorites</h3>
+    </div>
+
+    <!-- Main Menu--> 
+    <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280"></div>
+    
+    <!-- Share Menu-->
+    <div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>  
+    
+    <!-- Colors Menu-->
+    <div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div> 
+     
+    
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>
