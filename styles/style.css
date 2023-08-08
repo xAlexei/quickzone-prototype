@@ -3887,6 +3887,13 @@ button {
   background: linear-gradient(to bottom, rgba(27, 29, 33, 0) 0%, rgba(27, 29, 33, 0.8) 75%, #1b1d21 100%);
 }
 
+.display-flex{
+  display: inline-flex;  
+  justify-content: center;
+  align-items: center;
+  
+}
+
 /*Chips*/
 .chip {
   display: inline-block;
@@ -3990,6 +3997,15 @@ button {
 
 .menu .custom-control {
   margin-top: -42px !important;
+}
+
+.div-image{
+  padding: 1rem;
+  text-align: center;
+}
+
+.div-image h6{
+  padding: 10px;
 }
 
 /*iOS Switcher*/
@@ -6833,15 +6849,15 @@ input[type=number] {
 
 /*Styles used to showcase the demo product on ThemeForest and create backgrounds. These can be deleted to increase speed of loading*/
 .bg-0 {
-  background-image: url(../images/pictures/0l.jpg);
+  background-image: url(../images/quickzone/adds.png);
 }
 
 .bg-1 {
-  background-image: url(../images/pictures/1.jpg);
+  background-image: url(../images/quickzone/adds3.png);
 }
 
 .bg-2 {
-  background-image: url(../images/pictures/2.jpg);
+  background-image: url(../images/quickzone/adds2.png);
 }
 
 .bg-3 {
